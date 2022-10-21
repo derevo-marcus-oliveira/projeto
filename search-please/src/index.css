@@ -4,12 +4,9 @@
 }
 
 body {
-  display: flex;  
   width: 100vw;
   height: 100vh;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background: linear-gradient(to left top, rgb(0, 247, 255), rgb(253, 0, 253));
+  
 }
 
 #root {

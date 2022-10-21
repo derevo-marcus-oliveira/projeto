@@ -4,30 +4,40 @@ import './header.css'
 export default function Header() {
     return (
       <>
-        <div id="header">
-            <div className="logo">
-                <p>
-                    <Link to={"/"}>search please</Link>                    
-                </p>
+        <div id="container">
+            <div id="header">
+                <div className="logo">
+                    <p>search please</p>
+                </div>
+                <div className="container-header">
+                   
+                    <div className="area1">
+                        <input type="text" className="campo" />
+                        <button type="submit" className="pesquisa">
+                           <Link to={""}>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                           </Link>
+                        </button>
+
+                        <div className="perfilUsuario">
+
+                            <p>Fulano de Tal</p>
+                            <div className="perfil">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="area2">
+
+                    </div>
+
+                </div>
             </div>
-
-            <nav className="links">
-                <ul>
-                    <li>
-                        <Link to={"catalogo"}>Catalogo</Link>
-                    </li>
-                    <li>
-                        <Link to={"sobre"}>Sobre</Link>
-                    </li>
-                    <li>
-                        <Link to={"contato"}>Contato</Link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div id="detalhe">
-            <Outlet/>
+    
+            <div id="detalhe">
+                
+            </div>
         </div>
       </>
     );
